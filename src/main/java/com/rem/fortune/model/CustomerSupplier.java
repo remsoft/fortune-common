@@ -1,7 +1,6 @@
 package com.rem.fortune.model;
 
 public class CustomerSupplier extends Model {
-	private String id;
 	private String name;
 	private String phone;
 	private String email;
@@ -25,12 +24,6 @@ public class CustomerSupplier extends Model {
 	public void setIsCustomer(int isCustomer) {
 		this.isCustomer = isCustomer;
 	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getPhone() {
 		return phone;
 	}
@@ -45,7 +38,7 @@ public class CustomerSupplier extends Model {
 	}
 	@Override
 	public String toString() {
-		return "CustomerSupplier [id=" + id + ", name=" + name + ", phone=" + phone + ", email=" + email + ", address="
+		return "CustomerSupplier [id=" + getId() + ", name=" + name + ", phone=" + phone + ", email=" + email + ", address="
 				+ address.toString() + ", isCustomer=" + isCustomer + "]";
 	}
 	

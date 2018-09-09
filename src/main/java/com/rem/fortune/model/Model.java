@@ -3,16 +3,16 @@ package com.rem.fortune.model;
 import java.util.Date;
 
 public class Model {
-	private String id;
+	private int id;
 	private String createdBy;
 	private Date createdDate;
 	private String modifiedBy;
 	private Date modifiedDate;
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getCreatedBy() {
