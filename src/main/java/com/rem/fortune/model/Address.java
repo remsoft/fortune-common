@@ -1,17 +1,18 @@
 package com.rem.fortune.model;
 
 public class Address {
-	private String id;
+	private int id;
 	private String street;
 	private String city;
 	private String state;
 	private String zip;
 	private String country;
 	private String attention;
-	public String getId() {
+
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getStreet() {
