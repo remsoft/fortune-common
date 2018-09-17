@@ -1,3 +1,4 @@
 com\rem\fortune\model\Model.class
-com\rem\fortune\model\Address.class
 com\rem\fortune\model\CustomerSupplier.class
+com\rem\fortune\model\Organization.class
+com\rem\fortune\model\Address.class
