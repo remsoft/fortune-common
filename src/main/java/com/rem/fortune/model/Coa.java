@@ -1,5 +1,8 @@
 package com.rem.fortune.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Coa extends Model{
 	private int l1AccountType;
 	private int l2Branch;
@@ -8,6 +11,14 @@ public class Coa extends Model{
 	private int l5Custom;
 	private String coaCd;
 	private String favorite;
+	private String l1AccountTypName;
+	private String l1AccountTypGrp;
+	List<AccountType> accountTypes = new ArrayList<AccountType>();
+	List<Branch> branches = new ArrayList<Branch>();
+	List<CustomerSupplier> custSupps = new ArrayList<CustomerSupplier>();
+	List<Division> divisions = new ArrayList<Division>();
+	List<CoaCustomLevelN1> customFields1 = new ArrayList<CoaCustomLevelN1>(); 
+	
 	public int getL1AccountType() {
 		return l1AccountType;
 	}
@@ -50,11 +61,55 @@ public class Coa extends Model{
 	public void setFavorite(String favorite) {
 		this.favorite = favorite;
 	}
+	public String getL1AccountTypName() {
+		return l1AccountTypName;
+	}
+	public void setL1AccountTypName(String l1AccountTypName) {
+		this.l1AccountTypName = l1AccountTypName;
+	}
+	public String getL1AccountTypGrp() {
+		return l1AccountTypGrp;
+	}
+	public void setL1AccountTypGrp(String l1AccountTypGrp) {
+		this.l1AccountTypGrp = l1AccountTypGrp;
+	}
+	
+	public List<AccountType> getAccountTypes() {
+		return accountTypes;
+	}
+	public void setAccountTypes(List<AccountType> accountTypes) {
+		this.accountTypes = accountTypes;
+	}
+	public List<Branch> getBranches() {
+		return branches;
+	}
+	public void setBranches(List<Branch> branches) {
+		this.branches = branches;
+	}
+	public List<CustomerSupplier> getCustSupps() {
+		return custSupps;
+	}
+	public void setCustSupps(List<CustomerSupplier> custSupps) {
+		this.custSupps = custSupps;
+	}
+	public List<Division> getDivisions() {
+		return divisions;
+	}
+	public void setDivisions(List<Division> divisions) {
+		this.divisions = divisions;
+	}
+	public List<CoaCustomLevelN1> getCustomFields1() {
+		return customFields1;
+	}
+	public void setCustomFields1(List<CoaCustomLevelN1> customFields1) {
+		this.customFields1 = customFields1;
+	}
 	@Override
 	public String toString() {
-		return super.toString()+" Coa [l1AccountType=" + l1AccountType + ", l2Branch=" + l2Branch + ", l3CustSupp=" + l3CustSupp
+		return super.toString()+ "Coa [l1AccountType=" + l1AccountType + ", l2Branch=" + l2Branch + ", l3CustSupp=" + l3CustSupp
 				+ ", l4Division=" + l4Division + ", l5Custom=" + l5Custom + ", coaCd=" + coaCd + ", favorite="
-				+ favorite + "]";
+				+ favorite + ", l1AccountTypName=" + l1AccountTypName + ", l1AccountTypGrp=" + l1AccountTypGrp + "]";
 	}
+	
 	
 }
