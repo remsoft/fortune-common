@@ -13,11 +13,11 @@ public class Coa extends Model{
 	private String favorite;
 	private String l1AccountTypName;
 	private String l1AccountTypGrp;
-	List<AccountType> accountTypes = new ArrayList<AccountType>();
-	List<Branch> branches = new ArrayList<Branch>();
-	List<CustomerSupplier> custSupps = new ArrayList<CustomerSupplier>();
-	List<Division> divisions = new ArrayList<Division>();
-	List<CoaCustomLevelN1> customFields1 = new ArrayList<CoaCustomLevelN1>(); 
+	List<DropDownModel> accountTypes = new ArrayList<DropDownModel>();
+	List<DropDownModel> branches = new ArrayList<DropDownModel>();
+	List<DropDownModel> custSupps = new ArrayList<DropDownModel>();
+	List<DropDownModel> divisions = new ArrayList<DropDownModel>();
+	List<DropDownModel> customFields1 = new ArrayList<DropDownModel>(); 
 	
 	public int getL1AccountType() {
 		return l1AccountType;
@@ -74,34 +74,34 @@ public class Coa extends Model{
 		this.l1AccountTypGrp = l1AccountTypGrp;
 	}
 	
-	public List<AccountType> getAccountTypes() {
+	public List<DropDownModel> getAccountTypes() {
 		return accountTypes;
 	}
-	public void setAccountTypes(List<AccountType> accountTypes) {
+	public void setAccountTypes(List<DropDownModel> accountTypes) {
 		this.accountTypes = accountTypes;
 	}
-	public List<Branch> getBranches() {
+	public List<DropDownModel> getBranches() {
 		return branches;
 	}
-	public void setBranches(List<Branch> branches) {
+	public void setBranches(List<DropDownModel> branches) {
 		this.branches = branches;
 	}
-	public List<CustomerSupplier> getCustSupps() {
+	public List<DropDownModel> getCustSupps() {
 		return custSupps;
 	}
-	public void setCustSupps(List<CustomerSupplier> custSupps) {
+	public void setCustSupps(List<DropDownModel> custSupps) {
 		this.custSupps = custSupps;
 	}
-	public List<Division> getDivisions() {
+	public List<DropDownModel> getDivisions() {
 		return divisions;
 	}
-	public void setDivisions(List<Division> divisions) {
+	public void setDivisions(List<DropDownModel> divisions) {
 		this.divisions = divisions;
 	}
-	public List<CoaCustomLevelN1> getCustomFields1() {
+	public List<DropDownModel> getCustomFields1() {
 		return customFields1;
 	}
-	public void setCustomFields1(List<CoaCustomLevelN1> customFields1) {
+	public void setCustomFields1(List<DropDownModel> customFields1) {
 		this.customFields1 = customFields1;
 	}
 	@Override
