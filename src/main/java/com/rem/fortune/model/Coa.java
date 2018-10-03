@@ -9,6 +9,7 @@ public class Coa extends Model{
 	private int l3CustSupp;
 	private int l4Division;
 	private int l5Custom;
+	private int tax;
 	private String coaCd;
 	private String favorite;
 	private String l1AccountTypName;
@@ -18,6 +19,7 @@ public class Coa extends Model{
 	List<DropDownModel> custSupps = new ArrayList<DropDownModel>();
 	List<DropDownModel> divisions = new ArrayList<DropDownModel>();
 	List<DropDownModel> customFields1 = new ArrayList<DropDownModel>(); 
+	List<DropDownModel> taxes = new ArrayList<DropDownModel>(); 
 	
 	public int getL1AccountType() {
 		return l1AccountType;
@@ -104,10 +106,25 @@ public class Coa extends Model{
 	public void setCustomFields1(List<DropDownModel> customFields1) {
 		this.customFields1 = customFields1;
 	}
+	
+	public List<DropDownModel> getTaxes() {
+		return taxes;
+	}
+	public void setTaxes(List<DropDownModel> taxes) {
+		this.taxes = taxes;
+	}
+	
+
+	public int getTax() {
+		return tax;
+	}
+	public void setTax(int tax) {
+		this.tax = tax;
+	}
 	@Override
 	public String toString() {
 		return super.toString()+ "Coa [l1AccountType=" + l1AccountType + ", l2Branch=" + l2Branch + ", l3CustSupp=" + l3CustSupp
-				+ ", l4Division=" + l4Division + ", l5Custom=" + l5Custom + ", coaCd=" + coaCd + ", favorite="
+				+ ", l4Division=" + l4Division + ", l5Custom=" + l5Custom + ", tax="+tax+", coaCd=" + coaCd + ", favorite="
 				+ favorite + ", l1AccountTypName=" + l1AccountTypName + ", l1AccountTypGrp=" + l1AccountTypGrp + "]";
 	}
 	
